@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "go2-contact-guard"
+version = "0.1.0"
+description = "Event-triggered contact recovery layers for frozen Unitree Go2 locomotion policies."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Go2 Contact Guard contributors" }
+]
+dependencies = [
+  "numpy>=1.26"
+]
+
+[project.optional-dependencies]
+sim = [
+  "gymnasium>=0.29",
+  "mujoco>=3.2.0",
+  "pillow>=10"
+]
+reference = [
+  "onnxruntime>=1.17"
+]
+train = [
+  "stable-baselines3>=2.3.0",
+  "torch>=2.2"
+]
+
+[project.scripts]
+go2-contact-record-demo = "go2_mini_lab.record_long_contact_demo:main"
+go2-contact-viewer = "go2_mini_lab.mujoco_viewer:main"
+go2-contact-onnx-rollout = "go2_mini_lab.onnx_rollout:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

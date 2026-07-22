@@ -1,0 +1,24 @@
+{
+  "output_gif": "docs/assets/go2_long_contact_body_guard.gif",
+  "output_mp4": "docs/assets/go2_long_contact_body_guard.mp4",
+  "frames": 97,
+  "render_fps": 12.0,
+  "duration_s": 8.0,
+  "contact_start_s": 2.0,
+  "contact_duration_s": 3.0,
+  "force_body": "base_link",
+  "force_n": 22.0,
+  "force_direction": [
+    -8.081051227362462e-05,
+    21.999999999851582,
+    0.0
+  ],
+  "policy_action_mode": "onnx_safety_layer",
+  "force_safety_trigger_source": "oracle",
+  "force_response_router_mode": "semantic_oracle",
+  "force_response_profile": "body_yield_foot_guard",
+  "terminated": false,
+  "truncated": true,
+  "final_base_z": 0.3145777525184402,
+  "final_forward_velocity": 0.44682168616811807
+}

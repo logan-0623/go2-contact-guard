@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and system files
+.venv/
+.env
+.env.*
+.DS_Store
+
+# Local simulator dependencies and generated artifacts
+/external/unitree_mujoco/
+/reports/
+/checkpoints/
+/reference_datasets/
+/wandb/
+/runs/
+/logs/
+/dist/
+/build/
